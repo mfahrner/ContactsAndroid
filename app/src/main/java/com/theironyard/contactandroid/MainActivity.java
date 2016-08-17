@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemLongClickListener {
+
     ArrayAdapter<String> contacts;
 
     ListView list;
@@ -32,7 +33,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         addButton.setOnClickListener(this);
         list.setOnItemLongClickListener(this);
-
     }
 
     @Override
@@ -49,7 +49,4 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         contacts.remove(item);
         return true;
     }
-
-
-
 }
