@@ -38,10 +38,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
+
             String item = text.getText().toString() + " " + "(" + phone.getText().toString() + ")";
-            contacts.add(item);
+            if (!text.getText().toString().equals("") && !phone.getText().toString().equals("")) {
+                contacts.add(item);
+            }
             text.setText("");
             phone.setText("");
+
+
     }
 
     @Override
