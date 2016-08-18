@@ -33,14 +33,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         addButton.setOnClickListener(this);
         list.setOnItemLongClickListener(this);
+
     }
 
     @Override
     public void onClick(View v) {
-        String item = text.getText().toString() + " " + "(" + phone.getText().toString() + ")";
-        contacts.add(item);
-        text.setText("");
-        phone.setText("");
+            String item = text.getText().toString() + " " + "(" + phone.getText().toString() + ")";
+            contacts.add(item);
+            text.setText("");
+            phone.setText("");
     }
 
     @Override
